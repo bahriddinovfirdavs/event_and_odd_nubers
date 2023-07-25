@@ -1,14 +1,10 @@
 #A four-digit integer is given. Find the number of even digits in it.
 a=int(input())
-P=(a%10)%2
-O=((a//10)%10)%2
-L=((a//100)%10)%2
-I=(a/1000)%2
+P=(a%10+1)%2
+O=((a//10+1)%10)%2
+L=((a//100+1)%10)%2
+I=(a//1000+1)%2
 #Create a variable "var_int" and assign it a four-digit integer value.
-b=int(input())
-D=(b%10)%2
-A=((b//10)%10)%2
-Q=((b//100)%10)%2
-Y=(b/1000)%2
+F=P+O+L+I
 #Print the number of even digits in the variable "var_int".
-print(P,O,L,I,D,A,Q,Y)
+print(F)
